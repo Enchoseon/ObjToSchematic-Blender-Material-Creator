@@ -1,6 +1,8 @@
 # ObjToSchematic Blender Material Creator
 Create diffuse materials in Blender for use with [ObjToSchematic](https://github.com/LucasDower/ObjToSchematic).
 
+Note: Does not work with transparent or semitransparent blocks.
+
 # Usage: Blender
 
 1. Open the script in a Blender file.
@@ -18,7 +20,7 @@ In the "palette" settings, make sure to set the following parameters:
 - __colourSpace__: "rgb" *(should be this by default)*
 - __fallable__: "replace-falling" *(should be this by default)*
 
-If you're processing a large object and don't want to simplify it, you'll need to run [ObjToSchematic](https://github.com/LucasDower/ObjToSchematic) headlessly to avoid crashing—which is unfortunately isn't as easy as just running a single command. [Read this](https://github.com/LucasDower/ObjToSchematic#headless).
+If you're processing a large object and don't want to simplify it, you'll need to run [ObjToSchematic](https://github.com/LucasDower/ObjToSchematic) headlessly to avoid crashing—which unfortunately isn't as easy as just running a single command. [Read this](https://github.com/LucasDower/ObjToSchematic#headless).
 
 You may need to use forwardslashes instead of backslashes in your file paths, I'm not entirely sure ¯\\_(ツ)_/¯
 
@@ -26,6 +28,6 @@ You may need to use forwardslashes instead of backslashes in your file paths, I'
 
 I didn't really look that hard into [ObjToSchematic](https://github.com/LucasDower/ObjToSchematic), I just looked for a file with color information and thought, "yes, that one looks right" and made this script.
 
-Because of this, I don't actually know what the [`vanilla.atlas`](https://raw.githubusercontent.com/LucasDower/ObjToSchematic/main/res/atlases/vanilla.atlas) file is. In fact, while writing this Readme I found out that some very important blocks are missing from [`vanilla.atlas`](https://raw.githubusercontent.com/LucasDower/ObjToSchematic/main/res/atlases/vanilla.atlas), such as leaves or glass. I don't know why because I don't know what [`vanilla.atlas`](https://raw.githubusercontent.com/LucasDower/ObjToSchematic/main/res/atlases/vanilla.atlas) is.
+Because of this, I don't actually know what the [`vanilla.atlas`](https://raw.githubusercontent.com/LucasDower/ObjToSchematic/main/res/atlases/vanilla.atlas) file is. In fact, while writing this Readme I found out that some very important blocks are missing from [`vanilla.atlas`](https://raw.githubusercontent.com/LucasDower/ObjToSchematic/main/res/atlases/vanilla.atlas), such as leaves or glass. I don't know why because I don't know what [`vanilla.atlas`](https://raw.githubusercontent.com/LucasDower/ObjToSchematic/main/res/atlases/vanilla.atlas) is, all I know is that transparent/semitransparent blocks are missing from it.
 
 I'm not gonna bother finding out what [`vanilla.atlas`](https://raw.githubusercontent.com/LucasDower/ObjToSchematic/main/res/atlases/vanilla.atlas) is because I've already done everything else and I just want to enjoy the rest of my weekend.
